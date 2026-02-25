@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img" aria-label="Logo Warung Mpok Mar">
+  <defs>
+    <style>
+      .txt{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:1px}
+    </style>
+  </defs>
+  <rect width="400" height="460" fill="#f7eed7"/>
+  <ellipse cx="200" cy="220" rx="150" ry="190" fill="#0f6b5a"/>
+  <ellipse cx="200" cy="220" rx="120" ry="160" fill="#f7eed7"/>
+  <path d="M120 190c10-48 36-75 80-75s70 27 80 75v70H120z" fill="#f15a4a" stroke="#1a1a1a" stroke-width="4"/>
+  <circle cx="170" cy="165" r="7" fill="#1a1a1a"/>
+  <circle cx="230" cy="165" r="7" fill="#1a1a1a"/>
+  <path d="M170 198c8 10 22 10 30 0" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M130 110c18-22 39-32 70-32 35 0 64 13 88 39" fill="#4d8a42" stroke="#1a1a1a" stroke-width="4"/>
+  <rect x="55" y="252" width="290" height="58" rx="10" fill="#d54c3f" stroke="#f2b945" stroke-width="5"/>
+  <text x="200" y="290" text-anchor="middle" class="txt" font-size="46" fill="#fff7dd">MPOK MAR</text>
+  <text x="200" y="58" text-anchor="middle" class="txt" font-size="34" fill="#fff7dd">WARUNG NASI</text>
+  <text x="200" y="355" text-anchor="middle" class="txt" font-size="26" fill="#0f6b5a">ESTD 2025</text>
+  <text x="200" y="390" text-anchor="middle" class="txt" font-size="24" fill="#0f6b5a">ENAK, BERSIH, LEZAT</text>
+</svg>
