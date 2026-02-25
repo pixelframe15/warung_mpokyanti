@@ -1,0 +1,11 @@
+{
+  "name": "warung-mpok-mar",
+  "version": "1.0.0",
+  "description": "Fullstack website Warung Mpok Mar khas Betawi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "check": "node --check server.js"
+  }
+}

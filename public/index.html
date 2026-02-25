@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Mpok Mar | Khas Betawi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <img src="assets/logo-mpok-mar.svg" alt="Logo Warung Mpok Mar" class="logo" />
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Online</a>
+        <a href="#auth">Login Sosial</a>
+        <a href="#admin">Dashboard Admin</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="ornament left">🎭 Ondel-Ondel</div>
+      <div class="hero-content">
+        <h1>Selamat Datang di Warung Mpok Mar</h1>
+        <p>
+          Rasakan suasana warung khas Betawi dengan ornamen budaya, menu otentik,
+          order online cepat, pembayaran lengkap, dan dashboard admin profesional.
+        </p>
+        <div class="badges">
+          <span>🪘 Nuansa Tari Betawi</span>
+          <span>🍛 Resep Keluarga</span>
+          <span>💳 Pembayaran Lengkap</span>
+        </div>
+      </div>
+      <div class="ornament right">💃 Tari Topeng Betawi</div>
+    </section>
+
+    <main class="container">
+      <section id="menu" class="card">
+        <h2>Menu Khas Betawi</h2>
+        <div id="menuList" class="grid"></div>
+      </section>
+
+      <section id="order" class="card">
+        <h2>Order Online</h2>
+        <div class="order-grid">
+          <div>
+            <h3>Keranjang</h3>
+            <ul id="cartList"></ul>
+            <p><strong>Subtotal:</strong> Rp <span id="subtotal">0</span></p>
+          </div>
+          <form id="orderForm">
+            <input name="customerName" placeholder="Nama pelanggan" required />
+            <input name="customerPhone" placeholder="Nomor WhatsApp" required />
+            <textarea name="deliveryAddress" placeholder="Alamat pengantaran / catatan"></textarea>
+            <input name="promoCode" placeholder="Kode promo (opsional)" />
+            <select name="paymentMethodId" id="paymentMethodSelect" required></select>
+            <button type="submit">Checkout Sekarang</button>
+          </form>
+        </div>
+        <pre id="orderResult" class="result"></pre>
+      </section>
+
+      <section id="auth" class="card">
+        <h2>Login Pelanggan (Demo OAuth)</h2>
+        <form id="socialForm">
+          <input name="name" placeholder="Nama" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <div class="social-buttons">
+            <button type="button" data-provider="google">Login dengan Google</button>
+            <button type="button" data-provider="facebook">Login dengan Facebook</button>
+          </div>
+        </form>
+        <pre id="socialResult" class="result"></pre>
+      </section>
+
+      <section id="admin" class="card">
+        <h2>Dashboard Admin Lengkap</h2>
+        <p>Email demo: <code>admin@mpokmar.id</code> • Password: <code>admin123</code></p>
+        <form id="adminLoginForm" class="inline-form">
+          <input type="email" name="email" value="admin@mpokmar.id" required />
+          <input type="password" name="password" value="admin123" required />
+          <button type="submit">Login Admin</button>
+        </form>
+        <div id="adminPanel" hidden>
+          <div id="kpi" class="kpi-grid"></div>
+          <h3>Order Terbaru</h3>
+          <div id="adminOrders"></div>
+          <h3>Data Pembayaran</h3>
+          <div id="adminPayments"></div>
+          <h3>Stok Dapur</h3>
+          <div id="adminInventory"></div>
+          <h3>Manajemen Promo</h3>
+          <div id="adminPromos"></div>
+          <h3>Tambah Menu Baru</h3>
+          <form id="newMenuForm" class="inline-form">
+            <input name="name" placeholder="Nama menu" required />
+            <input name="category" placeholder="Kategori" required />
+            <input name="price" type="number" placeholder="Harga" required />
+            <input name="stock" type="number" placeholder="Stok" required />
+            <button type="submit">Tambah</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Warung Mpok Mar • Enak, Bersih, Lezat • ESTD 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
